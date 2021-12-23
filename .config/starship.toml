@@ -1,0 +1,33 @@
+# Inserts a blank line between shell prompts
+add_newline = true
+
+# Replace the "❯" symbol in the prompt with "➜"
+[character] # The name of the module we are configuring is "character"
+success_symbol = "[➜](yellow)" # The "success_symbol" segment is being set to "➜" with the color "bold green"
+
+[conda]
+disabled = true
+symbol = "▶︎ "
+style = "dimmed green"
+
+[git_status]
+disabled = true
+
+[java]
+disabled = true
+
+[gcloud]
+#format = 'on [$symbol$account(\($region\))]($style) '
+#symbol = "☁️ "
+format = 'on [$symbol $account (\($project\)) (\($region\))]($style) ' 
+symbol = ''
+disabled = true
+
+[time]
+disabled = true
+use_12hr = true
+# format = "at [$time]($style) "
+format = "[$time]($style) "
+
+[ruby]
+symbol = "🔺 "
